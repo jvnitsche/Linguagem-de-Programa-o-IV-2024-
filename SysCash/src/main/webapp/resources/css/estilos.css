@@ -1,0 +1,50 @@
+body{
+    background: #cccccc;
+}
+
+.logo{
+    font-size: 20px !important;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.caixa_login{
+    width: 400px;
+    margin: 0 auto;
+}
+
+.full{
+    display: block;
+    width: 100% !important;
+}
+
+.btn_esqueceu{
+    align-content: right;
+    justify-content: right;
+    display: flex;
+}
+
+.caixa_usuario{
+    width: 600px;
+    margin: 0 auto;
+}
+
+.caixa_main{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.direita{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+
+.rotulo{
+    font-size: 20px !important;
+    font-weight: bold;
+    color: black;
+}

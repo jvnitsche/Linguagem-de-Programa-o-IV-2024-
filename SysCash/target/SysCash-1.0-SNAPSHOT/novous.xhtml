@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Sistema SysCash</title>
+        <h:outputStylesheet name="estilos.css" library="css"/>
+    </h:head>
+    <h:body>
+        <h:form>
+            <p:outputLabel value="SysCash - Sistema de Vendas" class="logo"/>
+            <p:card class="caixa_usuario">
+                <f:facet name="title">
+                    Novo Usuário
+                </f:facet>
+                <div class="ui-g">
+                    <div class="ui-g-12 ui-lg-12">
+                        <p:outputLabel value="Nome"/>
+                        <p:inputText class="full" maxlength="60"/>
+                    </div>
+                    <div class="ui-g-12 ui-lg-6">
+                        <p:outputLabel value="CPF"/>
+                        <p:inputMask mask="###.###.###-##" class="full" />
+                    </div>
+                    <div class="ui-g-12 ui-lg-6">
+                        <p:outputLabel value="Telefone"/>
+                        <p:inputMask mask="(##) \9 ####-####" class="full" />
+                    </div>
+                    <div class="ui-g-12 ui-lg-12">
+                        <p:outputLabel value="E-mail"/>
+                        <p:inputText class="full" maxlength="60"/>
+                    </div>
+                    <div class="ui-g-12 ui-lg-12">
+                        <p:outputLabel value="Login"/>
+                        <p:inputText class="full" maxlength="8"/>
+                        <small>O login deve conter apenas 8 caracteres.</small>
+                    </div>
+                    <div class="ui-g-12 ui-lg-12">
+                        <p:outputLabel value="Senha"/>
+                        <p:password class="full" maxlength="8"/>
+                        <small>A senha deve conter apenas 8 caracteres.</small>
+                    </div>
+                    <div class="ui-g-12 ui-lg-12">
+                        <p:commandButton value="Cadastrar" styleClass="ui-button-success full" />
+                    </div>
+                    <div class="ui-g-12 ui-lg-12">
+                        <p:commandButton value="Limpar Campos" styleClass="full"/>
+                    </div>
+                    <div class="ui-g-12 ui-lg-12">
+                        <p:commandButton value="Voltar" styleClass="full" action="#{ct1.btTelaIndex(a)}"/>
+                    </div>
+                </div>
+            </p:card>
+        </h:form>
+    </h:body>
+</html>
